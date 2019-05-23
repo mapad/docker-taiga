@@ -74,7 +74,7 @@ services:
     #   - TAIGA_PUBLIC_REGISTER_ENABLED=false
     #   - DEFAULT_LANGUAGE="en"
     ports:
-      - "80:80"
+      - "9000:80"
     depends_on:
       # It would be better to add 'postgres' to 'depends_on' on 'backend' service
       # but 'celeryworker' extends 'backend' and we cannot extend a service

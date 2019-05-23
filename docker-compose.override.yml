@@ -16,11 +16,12 @@ services:
   backend:
     environment:
       - DJANGO_DEBUG=True
+      - TAIGA_HOSTNAME=localhost:9000
 
   frontend:
     environment:
       - TAIGA_DEBUG=true
-      - TAIGA_EVENTS_URL="ws://localhost/events"
+      - TAIGA_EVENTS_URL="ws://localhost:9000/events"
 
   celeryworker:
     command: ['celery', '-A', 'taiga', 'worker', '-P', 'gevent', '-c', '4', '--loglevel', 'debug']

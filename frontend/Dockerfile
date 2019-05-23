@@ -3,7 +3,7 @@ FROM nginx:1.13-alpine
 LABEL maintainer="douglasmirandasilva@gmail.com"
 LABEL taiga_version="tag:3.3.7-stable"
 
-ENV TAIGA_VERSION 3.3.7-stable
+ENV TAIGA_VERSION 4.2.4-stable
 
 COPY nginx/ /etc/nginx/conf.d/
 # Entrypoint

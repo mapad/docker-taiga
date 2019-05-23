@@ -24,6 +24,7 @@ if [ ! -f /taiga_frontend/conf.json ]; then
     "privacyPolicyUrl": null,
     "termsOfServiceUrl": null,
     "maxUploadFileSize": null,
+    "gravatar": true,
     "contribPlugins": []
 }
 EOF

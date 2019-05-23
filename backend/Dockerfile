@@ -1,6 +1,6 @@
 FROM python:3.6-alpine3.6 as BUILDER
 
-ENV TAIGA_VERSION 3.3.7
+ENV TAIGA_VERSION 4.2.4
 
 RUN apk update \
     && apk add --virtual build-dependencies \
